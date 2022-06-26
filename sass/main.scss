@@ -3,9 +3,10 @@
 @import './utils/visually-hidden';
 @import './utils/placeholders';
 @import './utils/mixins';
+@import './utils/variables';
 
 
-@import './base/variables';
+
 @import './base/common.scss';
 
 
@@ -13,6 +14,10 @@
 @import './components/container.scss';
 @import './components/section.scss';
 @import './components/title.scss';
+@import './components/button.scss';
+@import './components/social.scss';
+
+
 
 @import './layout/header.scss';
 @import './layout/hero.scss';

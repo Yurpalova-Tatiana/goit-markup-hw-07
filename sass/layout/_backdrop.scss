@@ -11,14 +11,11 @@
   
   
 }
-/*-----------------------BACKDROP---------------------*/
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
   transform: translateY(-100%);
-  
-  
 }
 
 .modal {
@@ -33,12 +30,12 @@
 }
 
 .modal-close-btn {
+
+  @extend %align;
+
   position: absolute;
   top: 8px;
   right: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 30px;
   height: 30px;
   padding: 0;
@@ -155,27 +152,27 @@
   margin-bottom: 30px;
   margin-top: 20px;
  
-  
-}
+  &::before{
+    display: block;
+    cursor: pointer;
+    content: '';
+    width: 16px;
+    height: 15px;
+    background: var(--white-background-color);
+    border: 0.2px solid  var(--secondary-text-color);
+    border-radius: 2px;
+    margin-right: 10px;
 
-.contact-form-checkbox-label::before{
-  display: block;
-  cursor: pointer;
-  content: '';
-  width: 16px;
-  height: 15px;
-  background: var(--white-background-color);
-  border: 0.2px solid  var(--secondary-text-color);
-  border-radius: 2px;
-  margin-right: 10px;
-}
-.contact-form-checkbox:checked + .contact-form-checkbox-label::before{
+    .contact-form-checkbox:checked + & {
+      background-image: url('../images/icons/icon-check.svg');
+    }
+  }
   
-  background-image: url('../images/icons/icon-check.svg');
-}
 
-.contact-form-checkbox:focus + .contact-form-checkbox-label::before{
-  background-color: var(--accent-color);
+  .contact-form-checkbox:focus + &::before{
+    background-color: var(--accent-color);
+  }
+
 }
 
 .dogovor{
@@ -206,4 +203,5 @@
   &:hover,
   &:focus {
   background: var(--btn-color-second);}
+
   }
