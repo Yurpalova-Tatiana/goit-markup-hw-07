@@ -1,1 +1,26 @@
-@import url(./base/_common.scss);
+
+
+@import './utils/visually-hidden';
+@import './utils/placeholders';
+@import './utils/mixins';
+
+
+@import './base/variables';
+@import './base/common.scss';
+
+
+@import './components/link.scss';
+@import './components/container.scss';
+@import './components/section.scss';
+@import './components/title.scss';
+
+@import './layout/header.scss';
+@import './layout/hero.scss';
+@import './layout/features.scss';
+@import './layout/work.scss';
+@import './layout/team.scss';
+@import './layout/footer.scss';
+@import './layout/clients.scss';
+@import './layout/portfolio.scss';
+@import './layout/backdrop.scss';
+
