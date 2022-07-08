@@ -8,8 +8,8 @@
     
     font-family: inherit;
     font-weight: 700;
-    background: var(--accent-color);
-    color: var(--white-text-color);
+    background: $accent-color;
+    color: $font-color-white;
     line-height: 1.9;
     letter-spacing: 0.06em;
     
@@ -20,7 +20,7 @@
 
     &:hover,
     &:focus {
-        background: var(--btn-color-second);
+        background: $hero-btn-hover;
     }
     }
     
