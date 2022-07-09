@@ -1,33 +1,27 @@
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./utils/placeholders";
+@import "./utils/mixins";
 
+@import "./base/common";
+@import "./base/container";
+@import "./base/section";
 
-@import './utils/visually-hidden';
-@import './utils/placeholders';
-@import './utils/mixins';
-@import './utils/variables';
+@import "./components/mobile-menu";
+@import "./components/link";
+@import "./components/logo";
+@import "./components/social-link";
+@import "./components/subscribe";
+@import "./components/backdrop";
+@import "./components/modal-window";
+@import "./components/contact-form";
 
-
-
-@import './base/common.scss';
-
-
-@import './components/link.scss';
-@import './components/container.scss';
-@import './components/section.scss';
-@import './components/title.scss';
-@import './components/button.scss';
-@import './components/social.scss';
-@import './components/mobile-menu.scss';
-@import './components/portfolio-btn.scss';
-
-
-@import './layout/header.scss';
-@import './layout/hero.scss';
-@import './layout/features.scss';
-@import './layout/work.scss';
-@import './layout/team.scss';
-@import './layout/footer.scss';
-@import './layout/clients.scss';
-@import './layout/portfolio.scss';
-@import './layout/backdrop.scss';
-
-
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/preference";
+@import "./layout/works";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/portfolio-filters";
+@import "./layout/projects";

@@ -1,149 +1,115 @@
-
-.footer{
-    background: $bg-section-dark;
-    padding-top: 60px; 
-    padding-bottom: 60px; 
-
+.footer {
+  background-color: #2f303a;
+  padding: 60px 0;
 }
-.address-footer{
-    margin-top: 20px;
+.footer-contacts,
+.contacts-list,
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
-
-
-.address-list-item:not(:last-child){
-    margin-bottom: 9px;
-    
-}
-.white {
-    color: $font-color-white;
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+.contacts {
+  font-style: normal;
 }
 
-.footer-mail,.footer-tel{
-    color: $footer-font-white-transparent;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    
+.adress-item {
+  transition: color var(--transition-duration) var(--transition-timing-function);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
 }
-
-.address{
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.7;
-    color: $font-color-white;
-    letter-spacing: 0.03em;
+.contacts-item:not(:last-child) {
+  margin-bottom: 9px;
 }
-
-.footer-flex{
-    display: flex;
-    align-items: baseline;
+.adress-item:hover,
+.adress-item:focus {
+  color: #ffffff;
 }
-
-.footer-left{
-    margin-right: 70px;
-    
+.adress {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-align: center;
 }
-
-.footer-social-list{
-    display: flex;
-    border-radius: 50%;
+.footer-social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.footer-title{
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $font-color-white;
-    margin-bottom: 20px;
-    
+.footer-social-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+  margin-bottom: 20px;
 }
-
-.footer-social-item:not(:last-child){
-    margin-right: 10px;
+.footer-social-link-icon {
+  fill: var(--main-title-color);
 }
-
 .footer-social-link {
-    width: 44px;
-    height: 44px;
-    display: block;
-    border-radius: 50%;
-    color: $font-color-white;
-    background-color: rgba(255, 255, 255, 0.1);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
+  @extend %align;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
 
-    &:hover,
-    &:focus {
-    color: $font-color-white;
-    background-color: $accent-color;
-    }
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
-.widget-subscribe{
-    margin-left: 93px;
+.footer-social-item:not(:last-child) {
+  margin-right: 10px;
 }
-.form-subscribe {
-    @extend  %align;
-}
-
-.form-subscribe-input {
-    width: 358px;
-    padding: 15px 16px;
-    margin-right: 12px;
-    background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    
+@media screen and (max-width: 767px) {
+  .contacts-list,
+  .footer-social {
+    margin-bottom: 60px;
+  }
 }
 
-.form-subscribe-input::placeholder {
-    font-size: 16px;
-    line-height: 1.25;   
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+  .footer-container {
     display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    color: $footer-font-white-transparent;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .footer-social {
+    margin-bottom: 0;
+  }
+  .footer-contacts {
+    margin-right: 165px;
+    margin-bottom: 0;
+  }
 }
-
-.subscribe-btn{
-    max-width: 200px;
-    max-height: 50px;
-
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    position: relative;
-    padding-left: 29px;
-    padding-right: 64px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    
-    font-family: inherit;
-    font-weight: 700;
-    background: $accent-color;
-    color: $font-color-white;
-    line-height: 1.9;
-    letter-spacing: 0.06em;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
-
-    align-self: center;
-}
-
-.subscribe-btn-icon{
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    top: 13px;
-    left: 148px;
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: baseline;
+  }
+  .footer-social {
+    margin-right: 93px;
+    align-items: flex-start;
+  }
+  .footer-contacts {
+    margin-right: 70px;
+    align-items: flex-start;
+  }
+  .contacts-list {
+    align-items: flex-start;
+  }
 }
