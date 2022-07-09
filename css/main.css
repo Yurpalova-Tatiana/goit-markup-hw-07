@@ -23,7 +23,7 @@
   overflow: hidden;
 }
 
-.footer-social-link, .client, .preference-item__picture, .modal-close-btn, .submit-btn {
+.footer-social-link, .client, .features-item__picture, .modal-close-btn, .submit-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -891,16 +891,16 @@ img {
     background-image: url("../images/desktop/hero/hero@2x.jpg");
   }
 }
-.preference__list {
+.features__list {
   display: block;
 }
 
-.preference-item {
+.features-item {
   display: flex;
   flex-direction: column;
 }
 
-.preference-item__picture {
+.features-item__picture {
   height: 120px;
   width: 100%;
   background-color: #f5f4fa;
@@ -908,7 +908,7 @@ img {
   margin-bottom: var(--tipical-margin);
 }
 
-.preference-item__title {
+.features-item__title {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.1428571429;
@@ -918,7 +918,7 @@ img {
   margin-bottom: 10px;
 }
 
-.preference-text {
+.features-text {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.7142857143;
@@ -927,52 +927,52 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .preference-item {
+  .features-item {
     width: 100%;
     align-content: center;
   }
-  .preference-item:not(:last-child) {
+  .features-item:not(:last-child) {
     margin-bottom: var(--tipical-margin);
   }
 
-  .preference-item__title {
+  .features-item__title {
     text-align: center;
   }
 }
 @media screen and (min-width: 768px) {
-  .preference__list {
+  .features__list {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .preference-item {
+  .features-item {
     width: 354px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .preference-item:nth-child(2n) {
+  .features-item:nth-child(2n) {
     margin-left: var(--tipical-margin);
   }
 
-  .preference-item:nth-child(-n+2) {
+  .features-item:nth-child(-n+2) {
     margin-bottom: var(--tipical-margin);
   }
 
-  .preference-item__title {
+  .features-item__title {
     text-align: left;
   }
 
-  .preference-text {
+  .features-text {
     text-align: left;
   }
 }
 @media screen and (min-width: 1200px) {
-  .preference__list {
+  .features__list {
     flex-wrap: nowrap;
     justify-content: space-between;
   }
 
-  .preference-item:not(:last-child) {
+  .features-item:not(:last-child) {
     margin-right: var(--tipical-margin);
     max-width: 270px;
   }
